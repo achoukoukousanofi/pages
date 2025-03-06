@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emails Count vs Cases Chart</title>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart', 'bar']});
+    google.charts.setOnLoadCallback(drawStuff);
+
+    function drawStuff() {
+      var data = new google.visualization.arrayToDataTable([
+        ['Emails Count', 'Cases'],
+        ['0', 6501],
+        ['1', 19598],
+        ['2', 17988],
+        ['3', 11380],
+        ['4', 5465],
+        ['5', 2868],
+        ['6', 1745],
+        ['7', 1159],
+        ['8', 817],
+        ['9', 544],
+        ['10', 409],
+        ['11', 293],
+        ['12', 204],
+        ['13', 172],
+        ['14', 141],
+        ['15', 103],
+        ['16', 78],
+        ['17', 79],
+        ['18', 58],
+        ['19', 54],
+        ['20', 46],
+        ['20+', 282]
+      ]);
+
+      var options = {
+        title: 'Emails Count vs Cases',
+        chartArea: {width: '80%'},
+        hAxis: {
+          title: 'Cases',
+          minValue: 0
+        },
+        vAxis: {
+          title: 'Emails Count'
+        }
+      };
+
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+    }
+  </script>
+</head>
+<body>
+  <div id="chart_div" style="width: 100%; height: 50rem"></div>
+</body>
+</html>
