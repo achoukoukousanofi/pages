@@ -18,6 +18,8 @@
 
 
 
+
+
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <FORM> element to your page.             -->
 <!--  ----------------------------------------------------------------------  -->
@@ -25,7 +27,7 @@
 <form action="https://emeabio--emeabioai.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00D9V00000Fc9WI" method="POST">
 
 <input type=hidden name="orgid" value="00D9V00000Fc9WI">
-<input type=hidden name="retURL" value="http://">
+<input type=hidden name="retURL" value="https://achoukoukousanofi.github.io/pages/web-to-case-oob.html">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -44,6 +46,43 @@
 <label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
 
 <label for="description">Description</label><textarea name="description"></textarea><br>
+
+<label for="type">Type</label><select  id="type" name="type"><option value="">--None--</option><option value="Claim">Claim</option>
+<option value="Request">Request</option>
+</select><br>
+
+Category:<select  id="00N2t0000034lb1" name="00N2t0000034lb1" title="Category"><option value="">--None--</option><option value="General Information">General Information</option>
+<option value="Commercial">Commercial</option>
+<option value="Payment Issues">Payment Issues</option>
+<option value="Logistic - Sales Order Issues">Logistic - Sales Order Issues</option>
+<option value="Logistic - Distribution Issues">Logistic - Distribution Issues</option>
+<option value="Logistic - Commercial Returns">Logistic - Commercial Returns</option>
+<option value="Quality - Recall">Quality - Recall</option>
+<option value="Quality - Product Quality">Quality - Product Quality</option>
+<option value="Value - Billing Issues">Value - Billing Issues</option>
+<option value="Value - Tax Issues">Value - Tax Issues</option>
+<option value="Value - Master Data Issue">Value - Master Data Issue</option>
+<option value="Value - Distribution Issues">Value - Distribution Issues</option>
+<option value="Value - Commercial Issues">Value - Commercial Issues</option>
+<option value="CMD Information">CMD Information</option>
+<option value="CMD Customer">CMD Customer</option>
+<option value="CMD Contract">CMD Contract</option>
+<option value="CMD Off-Invoice">CMD Off-Invoice</option>
+<option value="CMD Price List">CMD Price List</option>
+<option value="CMD Transactional Data">CMD Transactional Data</option>
+<option value="Sales Order Information">Sales Order Information</option>
+<option value="Sales Order Creation">Sales Order Creation</option>
+<option value="Emergency Order">Emergency Order</option>
+<option value="Sales Order Check">Sales Order Check</option>
+<option value="Sales Order Change">Sales Order Change</option>
+<option value="Sales Order Scenario">Sales Order Scenario</option>
+<option value="Phone Order">Phone Order</option>
+<option value="Order Allocation">Order Allocation</option>
+<option value="Delivery Processing">Delivery Processing</option>
+<option value="Invoice Processing">Invoice Processing</option>
+<option value="Interface monitoring">Interface monitoring</option>
+<option value="Documentation Copy">Documentation Copy</option>
+</select><br>
 
 Root Cause:<select  id="00N2t0000034lbK" name="00N2t0000034lbK" title="Root Cause"><option value="">--None--</option><option value="General Sanofi Information">General Sanofi Information</option>
 <option value="Customer Suggestion">Customer Suggestion</option>
@@ -138,6 +177,7 @@ Root Cause:<select  id="00N2t0000034lbK" name="00N2t0000034lbK" title="Root Caus
 <input type="submit" name="submit">
 
 </form>
+
 
 
 </body>
